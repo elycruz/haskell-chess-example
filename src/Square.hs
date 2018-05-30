@@ -1,16 +1,16 @@
 module Square where
 
-import Piece (Piece)
+import Piece (toRenderNoteId, Piece, fromRenderNoteId)
 import RenderNotation (RenderNoteId, validRenderNotation)
 
-type SquareColumn = Int -- Board column - one of [1..8]
-type SquareRow = Char -- Board row - one of [A..H]
+type SquareColumn = Char -- Board column - one of [1..8]
+type SquareRow = Int -- Board row - one of [A..H]
 
 data SquareColor = SquareBlack | SquareWhite deriving Show
 
 data Square = Square {
-    squareColumn :: SquareColumn,
-    squareRow :: SquareRow,
+    squareColumn :: Char,
+    squareRow :: Int,
     squareOccupier :: Maybe Piece,
     squareColor :: SquareColor,
     squareRenderId :: RenderNoteId,  -- One of 'pbknqr.'
@@ -18,5 +18,15 @@ data Square = Square {
 }
     deriving Show
 
-squareFromRenderNoteId :: RenderNoteId -> SquareColumn -> SquareRow -> SquareColor -> Square
-squareFromRenderNoteId renderNoteId col row sqColor = undefined
+squareFromRenderNoteId :: RenderNoteId -> Char -> Int -> SquareColor -> Square
+squareFromRenderNoteId renderNoteId column row color =
+    Square {
+        squareColumn = column,
+        squareRow = row,
+        squareOccupier = piece,
+        squareColor = color,
+        squareRenderId = toRenderNoteId piece,
+        squareAlgebraicId = [column] ++ (show row)
+        }
+    where
+        piece = fromRenderNoteId renderNoteId
