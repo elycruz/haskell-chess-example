@@ -1,8 +1,14 @@
 module Board where
 
+import Data.List (genericIndex, lines, unlines)
 import Data.Char (isUpper, toLower)
 import RenderNotation (RenderNotation)
-import Square (Square)
+import Square (
+    Square( squareRenderId ),
+    SquareColor( SquareWhite, SquareBlack ),
+    squareColorByEvenOdd,
+    squareFromRenderNoteId
+    )
 
 type Board = [Square]   -- Parsed in from 'render-notation'
 type BoardRows = [RenderNotation]
@@ -20,7 +26,7 @@ squaresMultiplier = 8
 emptySquareRenderId :: Char
 emptySquareRenderId = '.'
 
-defaultShownBoard :: RenderNotation
+defaultShownBoard :: String
 defaultShownBoard = unlines [
     "RBNQKNBR",
     "PPPPPPPP",
@@ -32,14 +38,28 @@ defaultShownBoard = unlines [
     "rbnqknbr"
     ]
 
-fromRenderNotation :: RenderNotation -> Board
-fromRenderNotation renderNotation = undefined
+fromRenderNotation1 :: String -> Int -> [[Square]]
+fromRenderNotation1 renderNoteRows colorToggleModifier =
+    map (\(row, rowNum) ->
+        map (\(renderNoteId, colInd) ->
+            let squareColor =
+                    squareColorByEvenOdd
+                        (colInd + rowNum + colorToggleModifier)
+                        SquareBlack
+                        SquareWhite
+            in squareFromRenderNoteId
+                renderNoteId
+                (genericIndex boardColumnIds (colInd - 1))
+                rowNum
+                squareColor
+        ) $ zip row boardRowIds
+    ) $ zip (lines renderNoteRows) boardRowIds
 
-toRenderNotation :: Board -> RenderNotation
-toRenderNotation board = undefined
+fromRenderNotation :: String -> [[Square]]
+fromRenderNotation renderNotation = fromRenderNotation1 renderNotation 0
+
+toRenderNotation :: [[Square]] -> RenderNotation
+toRenderNotation board = unlines $ map (\row -> map squareRenderId row) board
 
 toShownBoard :: Board -> ShownBoard
 toShownBoard board = undefined
-
-renderBoard :: Board -> ShownBoard
-renderBoard = undefined

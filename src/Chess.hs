@@ -6,4 +6,4 @@ import RenderNotation
 import Piece
 import Square
 import Board
-
+import Renderer

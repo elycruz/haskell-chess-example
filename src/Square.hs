@@ -6,7 +6,7 @@ import RenderNotation (RenderNoteId, validRenderNotation)
 type SquareColumn = Char -- Board column - one of [1..8]
 type SquareRow = Int -- Board row - one of [A..H]
 
-data SquareColor = SquareBlack | SquareWhite deriving Show
+data SquareColor = SquareBlack | SquareWhite deriving (Show, Eq)
 
 data Square = Square {
     squareColumn :: Char,
@@ -17,6 +17,11 @@ data Square = Square {
     squareAlgebraicId :: [Char] -- Algebraic notation for square;  E.g. 'A1, B2, E7, etc.'
 }
     deriving Show
+
+squareColorByEvenOdd :: Int -> SquareColor -> SquareColor -> SquareColor
+squareColorByEvenOdd i a b
+    | even i = a
+    | otherwise = b
 
 squareFromRenderNoteId :: RenderNoteId -> Char -> Int -> SquareColor -> Square
 squareFromRenderNoteId renderNoteId column row color =
