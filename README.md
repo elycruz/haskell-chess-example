@@ -10,7 +10,7 @@ https://docs.haskellstack.org/en/stable/GUIDE/
 See https://docs.haskellstack.org/en/stable/GUIDE/#stack-exec
 
 ## Run
-- `$ stack exe haskell-chess-example`
+- `$ stack exe haskell-chess-example-exe`
 See https://docs.haskellstack.org/en/stable/GUIDE/#stack-exec
 
 ## Test
