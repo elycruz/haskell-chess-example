@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2db0b5bf17399af4dd4348a38e84fea881432a0fa70d7dfa0aa14df8a77103c8
+-- hash: 8a2cdfa9d20fd61eea1581b6b1196cc39621f5499f5f88c78e497433e3014365
 
 name:           haskell-chess-example
 version:        0.1.0.0
@@ -26,7 +26,12 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Board
+      Chess
+      Piece
+      Renderer
+      RenderNotation
+      Square
   other-modules:
       Paths_haskell_chess_example
   hs-source-dirs:

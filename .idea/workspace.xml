@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb95ca22-5fc9-4fba-b61f-d9ac12fbc80f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ChangeLog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Setup.hs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/haskell-chess-example.cabal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stack.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Spec.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main.hs" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.hs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PIece.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piece.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haskell-chess-example.cabal" beforeDir="false" afterPath="$PROJECT_DIR$/haskell-chess-example.cabal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Renderer.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Renderer.hs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/package.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,16 +32,39 @@
         <entry file="file://$PROJECT_DIR$/app/Main.hs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Board.hs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Board.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="24">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chess.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Chess.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="haskell-chess-example.cabal" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haskell-chess-example.cabal">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -57,7 +74,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ReadBoard</find>
-      <find>\n&quot; ++</find>
+      <find />
       <find>Square</find>
       <find>square</find>
       <find>Color</find>
@@ -72,6 +89,7 @@
       <find>renderNoteIdAndPieceTypes</find>
       <find>Stand</find>
       <find>SquareColumn</find>
+      <find>Lib</find>
     </findStrings>
     <replaceStrings>
       <replace>ParsedBoard</replace>
@@ -104,11 +122,11 @@
         <option value="$PROJECT_DIR$/src/PIece.hs" />
         <option value="$PROJECT_DIR$/src/RenderNotation.hs" />
         <option value="$PROJECT_DIR$/src/Square.hs" />
+        <option value="$PROJECT_DIR$/README2.md" />
         <option value="$PROJECT_DIR$/src/Chess.hs" />
         <option value="$PROJECT_DIR$/src/Renderer.hs" />
-        <option value="$PROJECT_DIR$/src/Board.hs" />
-        <option value="$PROJECT_DIR$/README2.md" />
         <option value="$PROJECT_DIR$/app/Main.hs" />
+        <option value="$PROJECT_DIR$/src/Board.hs" />
       </list>
     </option>
   </component>
@@ -122,7 +140,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="1910" />
     <option name="width" value="1942" />
     <option name="height" value="2092" />
   </component>
@@ -142,7 +160,23 @@
             <path>
               <item name="haskell-chess-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="haskell-chess-example" type="462c0819:PsiDirectoryNode" />
+              <item name=".stack-work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="haskell-chess-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haskell-chess-example" type="462c0819:PsiDirectoryNode" />
+              <item name=".stack-work" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="haskell-chess-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haskell-chess-example" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="haskell-chess-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="haskell-chess-example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,18 +223,18 @@
       <workItem from="1527690853302" duration="13204000" />
       <workItem from="1527704265603" duration="335000" />
       <workItem from="1527704612520" duration="15288000" />
-      <workItem from="1527725669122" duration="174000" />
+      <workItem from="1527725669122" duration="4558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29001000" />
+    <option name="totallyTimeSpent" value="33385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
+    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24919786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12282551" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -221,20 +255,20 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24919786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32930845" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -285,38 +319,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piece.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chess.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Renderer.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -348,7 +354,7 @@
     <entry file="file://$PROJECT_DIR$/package.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -369,17 +375,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Main.hs">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haskell-chess-example.cabal">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="313">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/.stack-work/dist/5c8418a7/build/src/Chess.dump-hi">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chess.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Main.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Piece.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>

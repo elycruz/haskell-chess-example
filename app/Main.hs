@@ -1,9 +1,13 @@
 module Main where
 
-import Chess (renderBoard, fromRenderNotation, defaultShownBoard)
+import Data.List (intercalate)
+import Board (fromRenderNotation, defaultShownBoard)
+import Renderer (renderBoardPositions)
 
 main :: IO ()
 main = do
-    putStr $ renderBoard $ fromRenderNotation defaultShownBoard
+    putStrLn "\nBoard Positions"
+    putStr $ concat $ renderBoardPositions
+        $ fromRenderNotation defaultShownBoard
     return ()
 
