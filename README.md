@@ -1,4 +1,4 @@
-# haskell-chess-data-types-example
+# haskell-chess-example
 Data Types example for a chess game.
 
 ## Resources:
