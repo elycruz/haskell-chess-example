@@ -1,7 +1,7 @@
 module Square where
 
 import Piece (toRenderNoteId, Piece, fromRenderNoteId)
-import RenderNotation (RenderNoteId, validRenderNotation)
+import RenderNotation (RenderNoteId, validRenderNotes)
 
 type SquareColumn = Char -- Board column - one of [1..8]
 type SquareRow = Int -- Board row - one of [A..H]

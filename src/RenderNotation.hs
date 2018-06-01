@@ -7,20 +7,20 @@ type RenderNoteId = RenderNote -- Alias for notation symbol
 type RenderNotation = [RenderNoteId]
 
 -- 'p' - Pawn, 'b' - Bishop, etc..
-validRenderNotation :: [RenderNote]
-validRenderNotation = "pnbrqk."
+validRenderNotes :: [RenderNote]
+validRenderNotes = "pnbrqk."
 
 -- All except last char ('.')
-validPieceRenderNotation :: [RenderNote]
-validPieceRenderNotation = init validRenderNotation
+validPieceRenderNotes :: [RenderNote]
+validPieceRenderNotes = init validRenderNotes
 
 isValidRenderNote :: RenderNote -> Bool
-isValidRenderNote x = elem (toLower x) validRenderNotation
+isValidRenderNote x = elem (toLower x) validRenderNotes
 
 isValidPieceRenderNote :: RenderNote -> Bool
-isValidPieceRenderNote x = elem (toLower x) validPieceRenderNotation
+isValidPieceRenderNote x = elem (toLower x) validPieceRenderNotes
 
--- Translations of symbols in `validRenderNotation`
+-- Translations of symbols in `validRenderNotes`
 -- 'p' - Pawn
 -- 'n' - Knight
 -- 'b' - Bishop
