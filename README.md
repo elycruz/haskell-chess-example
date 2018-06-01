@@ -17,7 +17,7 @@ See https://docs.haskellstack.org/en/stable/GUIDE/#stack-exec
 - Run `$ stack test`
 
 ## Todos
-- [ ] - Write tests.
+- [-] - Write tests (in progress).
 
 ## Notes
 ### Haskell dev environment install
