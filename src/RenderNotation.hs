@@ -3,8 +3,7 @@ module RenderNotation where
 import Data.Char (toLower)
 
 type RenderNote = Char -- Render notation symbol
-type RenderNoteId = RenderNote -- Alias for notation symbol
-type RenderNotation = [RenderNoteId]
+type RenderNotation = [RenderNote]
 
 -- 'p' - Pawn, 'b' - Bishop, etc..
 validRenderNotes :: [RenderNote]

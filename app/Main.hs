@@ -10,4 +10,3 @@ main = do
     putStr $ concat $ renderBoardPositions
         $ fromRenderNotation defaultShownBoard
     return ()
-

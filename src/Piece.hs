@@ -1,21 +1,21 @@
 module Piece where
 
 import Data.Char (isUpper, toLower)
-import RenderNotation (RenderNoteId, isValidPieceRenderNote)
+import RenderNotation (RenderNote, isValidPieceRenderNote)
 
-data PieceType = Pawn | Knight | Bishop | Rook | Queen | King deriving Show
+data PieceType = Pawn | Knight | Bishop | Rook | Queen | King deriving (Show, Eq)
 
-data PieceColor = White | Black deriving Show
+data PieceColor = White | Black deriving (Show, Eq)
 
 data Piece = Piece {
     pieceColor :: PieceColor,
     pieceType :: PieceType,
-    pieceRenderId :: RenderNoteId
+    pieceRenderId :: RenderNote
 }
     deriving Show
 
-renderNoteIdsAndPieceTypes :: [(RenderNoteId, PieceType)]
-renderNoteIdsAndPieceTypes = [
+renderNotesAndPieceTypes :: [(RenderNote, PieceType)]
+renderNotesAndPieceTypes = [
     ('p', Pawn),
     ('n', Knight),
     ('b', Bishop),
@@ -24,27 +24,24 @@ renderNoteIdsAndPieceTypes = [
     ('k', King)
     ]
 
-isValidPieceId :: RenderNoteId -> Bool
-isValidPieceId = isValidPieceRenderNote
+getColorFromRenderNote :: RenderNote -> PieceColor
+getColorFromRenderNote rId = if isUpper rId then Black else White
 
-getColorFromRenderNoteId :: RenderNoteId -> PieceColor
-getColorFromRenderNoteId rId = if isUpper rId then Black else White
+getPieceTypeByRenderNote :: RenderNote -> Maybe PieceType
+getPieceTypeByRenderNote rId = lookup (toLower rId) renderNotesAndPieceTypes
 
-getPieceTypeByRenderNoteId :: RenderNoteId -> Maybe PieceType
-getPieceTypeByRenderNoteId rId = lookup (toLower rId) renderNoteIdsAndPieceTypes
-
-fromRenderNoteId :: RenderNoteId -> Maybe Piece
-fromRenderNoteId rId =
-    if ((isValidPieceId rId) == False) then Nothing
+fromRenderNote :: RenderNote -> Maybe Piece
+fromRenderNote rId =
+    if ((isValidPieceRenderNote rId) == False) then Nothing
     else maybe
         Nothing
         (\_pieceType -> Just $ Piece{
-            pieceColor=(getColorFromRenderNoteId rId),
+            pieceColor=(getColorFromRenderNote rId),
             pieceType=_pieceType,
             pieceRenderId=rId
         })
-        (getPieceTypeByRenderNoteId rId)
+        (getPieceTypeByRenderNote rId)
 
-toRenderNoteId :: Maybe Piece -> RenderNoteId
-toRenderNoteId maybePiece =
+toRenderNote :: Maybe Piece -> RenderNote
+toRenderNote maybePiece =
     maybe '.' (\piece -> pieceRenderId piece) maybePiece

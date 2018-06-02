@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 394020b7ca524b17a30a98992ee59e60a7b280b37533d2fb6ef7cf82c6401d47
+-- hash: c65a7f6bb8bf0a075ec34083778ca6847986218c9e78c519df607d14eea2b713
 
 name:           haskell-chess-example
 version:        0.1.0.0
@@ -27,7 +27,6 @@ source-repository head
 library
   exposed-modules:
       Board
-      Chess
       Piece
       Renderer
       RenderNotation
@@ -60,6 +59,8 @@ test-suite haskell-chess-example-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      PieceSpec
+      RenderNotationSpec
       Paths_haskell_chess_example
   hs-source-dirs:
       test

@@ -7,7 +7,7 @@ import Square (
     Square( squareRenderId ),
     SquareColor( SquareWhite, SquareBlack ),
     squareColorByEvenOdd,
-    squareFromRenderNoteId
+    squareFromRenderNote
     )
 
 type Board = [Square]   -- Parsed in from 'render-notation'
@@ -41,14 +41,14 @@ defaultShownBoard = unlines [
 fromRenderNotation1 :: String -> Int -> [[Square]]
 fromRenderNotation1 renderNoteRows colorToggleModifier =
     map (\(row, rowNum) ->
-        map (\(renderNoteId, colInd) ->
+        map (\(renderNote, colInd) ->
             let squareColor =
                     squareColorByEvenOdd
                         (colInd + rowNum + colorToggleModifier)
                         SquareBlack
                         SquareWhite
-            in squareFromRenderNoteId
-                renderNoteId
+            in squareFromRenderNote
+                renderNote
                 (genericIndex boardColumnIds (colInd - 1))
                 rowNum
                 squareColor
