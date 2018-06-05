@@ -15,6 +15,9 @@ import RenderNotation (validRenderNotes, validPieceRenderNotes)
 import Data.Char (isLower, toUpper, isAlpha)
 import Data.List
 
+mixedCaseRenderNotes :: [Char]
+mixedCaseRenderNotes = (validPieceRenderNotes ++ map toUpper validPieceRenderNotes)
+
 spec :: Spec
 spec = do
   describe "renderNotesAndPieceTypes" $ do
@@ -41,7 +44,13 @@ spec = do
 
     it "should return a `Nothing` for invalid render notes" $ do
       (all isNothing $ fmap fromRenderNote $
-        (['A'..'Z'] ++ ['a'..'z']) \\ (validPieceRenderNotes ++ fmap toUpper validPieceRenderNotes)
+        (['A'..'Z'] ++ ['a'..'z']) \\ mixedCaseRenderNotes
         )
       `shouldBe` True
 
+    describe "toRenderNote" $ do
+      it "Should return a valid render note from a piece" $
+        (and
+          $ maybe [] (map (\piece -> elem (pieceRenderId piece) validPieceRenderNotes))
+          $ sequence $ map fromRenderNote mixedCaseRenderNotes
+        ) `shouldBe` True

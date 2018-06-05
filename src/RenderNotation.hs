@@ -1,4 +1,11 @@
 module RenderNotation where
+--    ( RenderNote
+--    , RenderNotation
+--    , validRenderNotes
+--    , validPieceRenderNotes
+--    , isValidPieceRenderNote
+--    , isValidRenderNote
+--    )
 
 import Data.Char (toLower)
 
@@ -19,7 +26,7 @@ isValidRenderNote x = elem (toLower x) validRenderNotes
 isValidPieceRenderNote :: RenderNote -> Bool
 isValidPieceRenderNote x = elem (toLower x) validPieceRenderNotes
 
--- Translations of symbols in `validRenderNotes`
+-- Translations of symbols
 -- 'p' - Pawn
 -- 'n' - Knight
 -- 'b' - Bishop
