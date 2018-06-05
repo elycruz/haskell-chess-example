@@ -43,5 +43,4 @@ fromRenderNote rId =
         (getPieceTypeByRenderNote rId)
 
 toRenderNote :: Maybe Piece -> RenderNote
-toRenderNote maybePiece =
-    maybe '.' (\piece -> pieceRenderId piece) maybePiece
+toRenderNote maybePiece =  maybe '.' pieceRenderId maybePiece

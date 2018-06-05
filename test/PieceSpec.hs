@@ -12,7 +12,7 @@ import Piece (
   pieceRenderId, pieceType
   )
 import RenderNotation (validRenderNotes, validPieceRenderNotes)
-import Data.Char (isLower, toUpper, isAlpha)
+import Data.Char (isLower, toLower, toUpper, isAlpha)
 import Data.List
 
 mixedCaseRenderNotes :: [Char]
@@ -50,7 +50,10 @@ spec = do
 
     describe "toRenderNote" $ do
       it "Should return a valid render note from a piece" $
-        (and
-          $ maybe [] (map (\piece -> elem (pieceRenderId piece) validPieceRenderNotes))
-          $ sequence $ map fromRenderNote mixedCaseRenderNotes
+        (and $ maybe [] map (\(piece, renderNote) ->
+                renderNote == (pieceRenderId piece) &&
+                elem (toLower renderNote) validPieceRenderNotes
+            ) $
+            (map (\piece -> (piece, toRenderNote piece)) >>=) $ sequence $
+            map fromRenderNote $ (validPieceRenderNotes ++ (map toUpper validPieceRenderNotes))
         ) `shouldBe` True

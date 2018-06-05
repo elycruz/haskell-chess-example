@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eb95ca22-5fc9-4fba-b61f-d9ac12fbc80f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RenderNotation.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RenderNotation.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Piece.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piece.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/PieceSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/PieceSpec.hs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,21 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="PieceSpec.hs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/PieceSpec.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Spec.hs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Spec.hs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="642">
+              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -39,17 +30,17 @@
       <file leaf-file-name="Piece.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Piece.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state relative-caret-position="729">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.hs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Board.hs">
+      <file leaf-file-name="RenderNotation.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+            <state relative-caret-position="526">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -81,6 +72,8 @@
       <find>renderNoteId</find>
       <find>Id</find>
       <find>isValidPieceId</find>
+      <find>getPieceTypeByRenderNote</find>
+      <find>isValidPieceRenderNote</find>
     </findStrings>
     <replaceStrings>
       <replace>ParsedBoard</replace>
@@ -129,9 +122,9 @@
         <option value="$PROJECT_DIR$/test/Spec.hs" />
         <option value="$PROJECT_DIR$/test/RendererSpec.hs" />
         <option value="$PROJECT_DIR$/test/SquareSpec.hs" />
-        <option value="$PROJECT_DIR$/src/Piece.hs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/RenderNotationSpec.hs" />
+        <option value="$PROJECT_DIR$/src/Piece.hs" />
         <option value="$PROJECT_DIR$/src/RenderNotation.hs" />
         <option value="$PROJECT_DIR$/test/PieceSpec.hs" />
       </list>
@@ -229,48 +222,58 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60058000" />
+    <option name="totallyTimeSpent" value="63446000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="971" height="1046" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24919786" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32821077" />
-      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12293144" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32821077" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="18" weight="0.3435785" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34194052" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24919786" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.32821077" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="18" weight="0.3435785" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32930845" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24919786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32821077" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32930845" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3435785" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32821077" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32930845" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
@@ -554,25 +557,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Spec.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
+        <state relative-caret-position="29">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/RenderNotationSpec.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Square.hs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="1106">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -583,17 +576,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Piece.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="729">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/PieceSpec.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="642">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
         </state>
       </provider>
     </entry>
