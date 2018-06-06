@@ -60,7 +60,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ReadBoard</find>
-      <find>\n&quot; ++</find>
+      <find />
       <find>Square</find>
       <find>square</find>
       <find>Color</find>
@@ -155,9 +155,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="388" />
-    <option name="y" value="42" />
     <option name="width" value="1942" />
-    <option name="height" value="1460" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
