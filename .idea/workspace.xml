@@ -4,6 +4,7 @@
     <list default="true" id="eb95ca22-5fc9-4fba-b61f-d9ac12fbc80f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Piece.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piece.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.hs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.hs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/PieceSpec.hs" beforeDir="false" afterPath="$PROJECT_DIR$/test/PieceSpec.hs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,12 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PieceSpec.hs" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PieceSpec.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/PieceSpec.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
+            <state relative-caret-position="210">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -30,8 +31,17 @@
       <file leaf-file-name="Piece.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Piece.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="369">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Square.hs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Square.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -39,7 +49,7 @@
       <file leaf-file-name="RenderNotation.hs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="812">
               <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
             </state>
           </provider>
@@ -74,6 +84,8 @@
       <find>isValidPieceId</find>
       <find>getPieceTypeByRenderNote</find>
       <find>isValidPieceRenderNote</find>
+      <find>toRenderNote</find>
+      <find>fromRenderNote</find>
     </findStrings>
     <replaceStrings>
       <replace>ParsedBoard</replace>
@@ -96,8 +108,10 @@
       <replace>isValidePieceRenderNote</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>G:\haskell\haskell-chess-example\src</dir>
       <dir>C:\Users\elyde\workspace\Haskell_Sandbox\haskell-chess-example\src</dir>
+      <dir>G:\haskell\haskell-chess-example</dir>
+      <dir>G:\haskell\haskell-chess-example\test</dir>
+      <dir>G:\haskell\haskell-chess-example\src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -110,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/RenderNotes.hs" />
         <option value="$PROJECT_DIR$/src/StandaloneTypes.hs" />
         <option value="$PROJECT_DIR$/src/PIece.hs" />
-        <option value="$PROJECT_DIR$/src/Square.hs" />
         <option value="$PROJECT_DIR$/README2.md" />
         <option value="$PROJECT_DIR$/src/Chess.hs" />
         <option value="$PROJECT_DIR$/src/Renderer.hs" />
@@ -124,9 +137,10 @@
         <option value="$PROJECT_DIR$/test/SquareSpec.hs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/RenderNotationSpec.hs" />
-        <option value="$PROJECT_DIR$/src/Piece.hs" />
         <option value="$PROJECT_DIR$/src/RenderNotation.hs" />
+        <option value="$PROJECT_DIR$/src/Piece.hs" />
         <option value="$PROJECT_DIR$/test/PieceSpec.hs" />
+        <option value="$PROJECT_DIR$/src/Square.hs" />
       </list>
     </option>
   </component>
@@ -140,9 +154,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="388" />
+    <option name="y" value="42" />
     <option name="width" value="1942" />
-    <option name="height" value="2092" />
+    <option name="height" value="1460" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -176,7 +191,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learn-you-a-haskell" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
@@ -218,51 +233,44 @@
       <workItem from="1527820189279" duration="8196000" />
       <workItem from="1527948629287" duration="1495000" />
       <workItem from="1528045738827" duration="6285000" />
+      <workItem from="1528289380653" duration="4328000" />
+      <workItem from="1528294422989" duration="2401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63446000" />
+    <option name="totallyTimeSpent" value="70175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="388" y="42" width="1942" height="1460" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12293144" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32821077" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34194052" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24919786" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24789916" />
       <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32980332" />
+      <window_info active="true" anchor="bottom" id="Find" order="2" visible="true" weight="0.3290469" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.32821077" />
       <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="18" weight="0.3435785" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="18" weight="0.3459417" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32930845" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24919786" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24840765" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -270,12 +278,12 @@
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3435785" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3459417" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32930845" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,17 +328,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="288">
             <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -534,17 +542,17 @@
     <entry file="file://$PROJECT_DIR$/test/RendererSpec.hs" />
     <entry file="file://$PROJECT_DIR$/test/BoardSpec.hs" />
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="480">
             <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -576,31 +584,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Square.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RenderNotation.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="812">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piece.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/PieceSpec.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
+        <state relative-caret-position="210">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Piece.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

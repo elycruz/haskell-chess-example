@@ -1,6 +1,6 @@
 module Square where
 
-import Piece (toRenderNote, Piece, fromRenderNote)
+import Piece (Piece, pieceRenderId, fromRenderNote)
 import RenderNotation (RenderNote, validRenderNotes)
 
 type SquareColumn = Char -- Board column - one of [1..8]
@@ -30,7 +30,7 @@ squareFromRenderNote renderNote column row color =
         squareRow = row,
         squareOccupier = piece,
         squareColor = color,
-        squareRenderId = toRenderNote piece,
+        squareRenderId = maybe '.' pieceRenderId piece,
         squareAlgebraicId = [column] ++ (show row)
         }
     where

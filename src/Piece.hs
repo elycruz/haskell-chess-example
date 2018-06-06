@@ -41,6 +41,3 @@ fromRenderNote rId =
             pieceRenderId=rId
         })
         (getPieceTypeByRenderNote rId)
-
-toRenderNote :: Maybe Piece -> RenderNote
-toRenderNote maybePiece =  maybe '.' pieceRenderId maybePiece

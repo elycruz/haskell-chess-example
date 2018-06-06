@@ -48,12 +48,3 @@ spec = do
         )
       `shouldBe` True
 
-    describe "toRenderNote" $ do
-      it "Should return a valid render note from a piece" $
-        (and $ maybe [] map (\(piece, renderNote) ->
-                renderNote == (pieceRenderId piece) &&
-                elem (toLower renderNote) validPieceRenderNotes
-            ) $
-            (map (\piece -> (piece, toRenderNote piece)) >>=) $ sequence $
-            map fromRenderNote $ (validPieceRenderNotes ++ (map toUpper validPieceRenderNotes))
-        ) `shouldBe` True
