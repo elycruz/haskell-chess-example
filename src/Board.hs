@@ -18,7 +18,7 @@ boardColumnIds :: [Char]
 boardColumnIds = ['A'..'H']
 
 boardRowIds :: [Int]
-boardRowIds = [1..8]
+boardRowIds = [8,7..1]
 
 squaresMultiplier :: Int
 squaresMultiplier = 8
@@ -52,7 +52,7 @@ fromRenderNotation1 renderNoteRows colorToggleModifier =
                 (genericIndex boardColumnIds (colInd - 1))
                 rowNum
                 squareColor
-        ) $ zip row boardRowIds
+        ) $ zip row (reverse boardRowIds)
     ) $ zip (lines renderNoteRows) boardRowIds
 
 fromRenderNotation :: String -> [[Square]]

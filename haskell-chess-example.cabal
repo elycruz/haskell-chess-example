@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c65a7f6bb8bf0a075ec34083778ca6847986218c9e78c519df607d14eea2b713
+-- hash: 14793234a8c7a617afb3a8bf775fd0bce4ca02be376c00c7331a815875067cd6
 
 name:           haskell-chess-example
 version:        0.1.0.0
