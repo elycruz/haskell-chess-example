@@ -12,7 +12,7 @@ See https://docs.haskellstack.org/en/stable/GUIDE/#stack-exec
 
 ## Run
 To execute built binary:
-- `$ stack exe haskell-chess-example-exe`
+- `$ stack exec haskell-chess-example-exe`
 See https://docs.haskellstack.org/en/stable/GUIDE/#stack-exec
 
 ## Test
